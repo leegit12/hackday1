@@ -8,6 +8,18 @@ $new_last;
 $first;
 if(isset($_GET['firstname'])){
 $first = $_GET['firstname'];
+$age = $_GET['age'];
+$color = $_GET['color'];
+$animal = $_GET['animal'];
+$season = $_GET['season'];
+$book = $_GET['book'];
+$tv = $_GET ['TV'];
+$siblings = $_GET ['siblings'];
+$sense = $_GET ['sense'];
+$computer = $_GET['OS'];
+$country = $_GET['country'];
+$new_name = $new_first." ".$first;
+
 
 //echo $first . $last;
 $f_first= substr($first,0,1);
@@ -306,17 +318,8 @@ foreach ($results as $entry) {
 
 
 <?php
-$age = $_GET['age'];
-$color = $_GET['color'];
-$animal = $_GET['animal'];
-$season = $_GET['season'];
-$book = $_GET['book'];
-$tv = $_GET ['TV'];
-$siblings = $_GET ['siblings'];
-$sense = $_GET ['sense'];
-$computer = $_GET['OS'];
-$country = $_GET['country'];
-$new_name = $new_first." ".$first;
+if(isset($firstname){
+
 
 $user_name = "root";
 $password = "";
@@ -335,9 +338,10 @@ if($db_found){
 
 
 } else
-{ echo "Database not found";} 
+{ echo "Database not found";
+} 
 
-
+}
 ?>
 
 
